@@ -1,0 +1,387 @@
+@font-face {
+  font-family: LucyRose;
+  src: url(LucyRose/LucyRosePERSONAL-Regular.otf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family:Aquatico ;
+  src: url(Aquatico/Aquatico-Regular.otf);
+}
+@font-face {
+  font-family:Autography ;
+  src: url(Autography/Autography.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* layout for for mobile*/
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  gap: 3px;
+}
+.item {
+  /* background-color: lightgreen; */
+  /* border: 2px solid salmon; */
+}
+.Header {
+  background-color: black;
+  /* border: 2px solid black; */
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+.Header::first-letter {
+  color: red;
+  font-family: Autography;
+}
+.Navigation {
+  background-color: #252525;
+  padding: 10px 0px;
+  /* border: 2px solid #191919;; */
+}
+
+.Navigation ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+.Navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+.Navigation ul li a:hover {
+  color: orange;
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+.Footer {
+  background-color: #252525;
+  color: white;
+}
+.Footer ul li {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: .65em;
+}
+.Sidebar ul {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  background-color: #990000;
+}
+.Sidebar ul li {
+  list-style: none;
+}
+.Sidebar ul li .fa {
+  font-size: 25px;
+  line-height: 44px;
+  color: #000;
+}
+
+.Sidebar ul li a {
+  position: relative;
+  margin: 10px 0px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.Sidebar ul li .fa:hover {
+  color: #fff;
+}
+.Sidebar ul li:nth-child(1) a:hover {
+  background-color: #1877f2;
+}
+.Sidebar ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+.Sidebar ul li:nth-child(3) a:hover {
+  background-color: #25d366;
+}
+.Sidebar ul li:nth-child(4) a:hover {
+  background-color: #1da1f2;
+}
+.Sidebar ul li:nth-child(5) a:hover {
+  background-color: #db4437;
+}
+.Ads {
+  font-variant: small-caps;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  background-color: teal;
+}
+.Main {
+  padding: 5px 20px;
+}
+.Main h1 {
+  color: #333333;
+  font-family: LucyRose;
+  font-size: 4.2vw;
+}
+.Main ul {
+  padding: 0px 20px;
+}
+.by {
+  font-weight: bold;
+  color: #5d5b55;
+  font-variant: small-caps;
+  font-size: 5vw;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+.name {
+  color: black;
+  font-family: LucyRose;
+}
+.main-content {
+  font-size: 14px;
+  padding: 10px 0px;
+  font-family: Poppins;
+  line-height: 30px;
+}
+.research {
+  font-size: 18px;
+}
+h2 {
+  font-size: 22px;
+  padding: 15px 0px 0px;
+  font-family: Poppins;
+}
+.Main ul {
+  font-size: 14px;
+  font-family: Poppins;
+  line-height: 30px;
+}
+/* layout for for tablets */
+@media screen and (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(12,1fr); /* 12 means 12 cells of grid column will be created*/
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1px;
+  }
+  .Header {
+    grid-column: 1 / span 12;
+  }
+  .Navigation {
+    grid-column: 1 / span 12;
+  }
+  .Main {
+    grid-column: 3 / span 10;
+  }
+  .Sidebar {
+    grid-column: 1 / span 2;
+    grid-row: 3; /* here grid-row: 3 means sidebar to start from row 3 (Shorthand for 'grid-row-start' and 'grid-row-end'.)*/
+  }
+  .Ads {
+    grid-column: 1 / span 2;
+  }
+  .ads-content {
+    display: inline-block;
+    text-align: center;
+    font-variant: normal;
+    padding: 50px 0px;
+    font-size: 18px;
+  }
+  .Footer {
+    grid-column: 3 / span 10;
+  }
+  .Footer ul li {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+  }
+  .Sidebar {
+    background-color: lightcyan;
+  }
+  .Sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  .Sidebar ul li {
+    list-style: none;
+    padding: 14px 0px;
+  }
+  .Sidebar ul li .fa {
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+  }
+
+  .Sidebar ul li a {
+    position: relative;
+    margin: 15px 0px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 3px rgba(0, 0, 0, 0.6);
+  }
+   .Main h1 {
+    color: #333333;
+    font-family: LucyRose;
+    font-size: 3.6vw;
+  }
+  
+  .by {
+    font-weight: bold;
+    color: #5d5b55;
+    font-variant: small-caps;
+    font-size: 3vw;
+  }
+  .main-content {
+    font-size: 16px;
+    padding: 10px 0px;
+    font-family: Poppins;
+    line-height: 35px;
+  }
+ .research {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 28px;
+    padding: 15px 0px 0px;
+    font-family: Poppins;
+  }
+ .Main ul {
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 30px;
+  } 
+}
+/* layout for for desktop */
+@media screen and (min-width: 1020px) {
+  .container {
+    gap: 1px;
+  }
+  .Navigation {
+    grid-column: 3 / span 8;
+  }
+  .Main {
+    grid-column: 3 / span 8;
+  }
+  .Sidebar {
+    grid-row: 2 / 4; /*row start 2, end at 4 */
+  }
+  .Ads {
+    grid-column: 11 / span 2;
+    grid-row: 2 / span 4;
+  }
+  .ads-content {
+    display: inline-block;
+    font-variant: small-caps;
+    font-size: 50px;
+    writing-mode: vertical-lr; /* This property is used to write text vertically*/
+    position: sticky;
+    top: 0;
+  }
+  .Footer {
+    grid-column: 1 / span 12;
+  }
+  .Navigation {
+    background-color: #191919;
+    padding: 18px 30px;
+  }
+
+  .Navigation ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px;
+  }
+  .Navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+  .Footer ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.1em;
+  }
+  .Sidebar {
+    background-color: #990000;
+  }
+  .Sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    position: sticky;
+    top: 0;
+  }
+  .Sidebar ul li {
+    list-style: none;
+    margin: 8px 0px;
+  }
+  .Sidebar ul li .fa {
+    font-size: 40px;
+    line-height: 50px;
+    color: #000;
+  }
+
+  .Sidebar ul li a {
+    position: relative;
+    margin: 10px 0px;
+    display: block;
+    width: 140px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 3px rgba(0, 0, 0, 0.6);
+  }
+  .Main h1 {
+    color: #333333;
+    font-family: LucyRose;
+    font-size: 3vw;
+  }
+  
+   .by {
+    font-weight: bold;
+    color: #5d5b55;
+    font-variant: small-caps;
+    font-size: 2vw;
+  }
+  .main-content {
+    font-size: 18px;
+    padding: 20px 0px;
+    font-family: Poppins;
+    line-height: 40px;
+  }
+ .research {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 35px;
+    padding: 15px 0px 0px;
+    font-family: Poppins;
+  }
+.Main ul {
+    font-size: 18px;
+    font-family: Poppins;
+    line-height: 40px;
+  }  
+}
