@@ -25,6 +25,7 @@
   height: 100vh;
   grid-template-rows: auto auto 1fr auto auto auto;
   gap: 3px;
+  /* gap:10px */
 }
 .item {
   /* background-color: lightgreen; */
@@ -168,6 +169,9 @@ h2 {
   font-family: Poppins;
   line-height: 30px;
 }
+.back-to-top{
+  float: right;
+}
 /* layout for for tablets */
 @media screen and (min-width: 720px) {
   .container {
@@ -182,7 +186,7 @@ h2 {
     grid-column: 1 / span 12;
   }
   .Main {
-    grid-column: 3 / span 10;
+    grid-column: 3 / span 10; /* start from line 3 and after that span 10 lines or columns */
   }
   .Sidebar {
     grid-column: 1 / span 2;
