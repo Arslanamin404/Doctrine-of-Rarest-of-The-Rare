@@ -20,8 +20,6 @@ The content focuses on the "rarest of rare" cases, the legal precedents, and the
 
 ## Author
 
-- [Raashi Vaishya](https://github.com/Arslanamin404)
-
 - [Mr.Arsalan Rather](https://instagram.com/_.arsl_an)
 
 ## License
