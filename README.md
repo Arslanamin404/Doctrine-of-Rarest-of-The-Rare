@@ -12,12 +12,10 @@ The content focuses on the "rarest of rare" cases, the legal precedents, and the
 
 ## Usage
 
-1. Clone the repository:
-
-   ```bash
-     git clone https://github.com/Arslanamin404/cloned-website
-   ```
-
+1. Clone the repository: 
+```bash
+    git clone https://github.com/Arslanamin404/cloned-website
+```
 2. Open `index.html` in a web browser to view the webpage.
 
 ## Author
